@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🪝 DiscoHook
 
-## Getting Started
+A powerful, intuitive Discord webhook message builder and formatter. Craft stunning embed messages, manage rich content, and send notifications to Discord with zero hassle.
 
-First, run the development server:
+## ✨ Features
+
+- **📝 Visual Embed Builder** - Create beautiful Discord embeds with a live preview
+- **🔗 Webhook URL Management** - Store and manage your webhook URLs securely
+- **🎨 Rich Content Support** - Add authors, avatars, content blocks, files, and polls
+- **👁️ Real-time Preview** - See exactly how your message will look in Discord
+- **📦 Discord API Integration** - Built with Discord API types for full compatibility
+- **⚡ Fast & Responsive** - Powered by Next.js 15 with Turbopack for lightning-fast builds
+- **🎯 Markdown Support** - Full Discord markdown rendering with `@odiffey/discord-markdown`
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+
+- pnpm, npm, yarn, or bun
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone the repository
+git clone <your-repo-url>
+cd discohook
+
+# Install dependencies
+pnpm install
+# or: npm install, yarn install, bun install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Start the development server
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) in your browser to start building webhooks!
 
-## Learn More
+### Production Build
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Build for production
+pnpm build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Start production server
+pnpm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+```
+src/
+├── app/
+│   ├── (app)/              # Main app routes
+│   │   ├── App.tsx         # Main application component
+│   │   ├── EmbedMaker.tsx  # Embed builder interface
+│   │   └── WebhookURL.tsx  # Webhook URL management
+│   ├── payload/            # Discord message components
+│   │   ├── Embed.tsx       # Embed rendering
+│   │   ├── Author.tsx      # Author metadata
+│   │   ├── Avatar.tsx      # Avatar display
+│   │   ├── Content.tsx     # Message content
+│   │   ├── File.tsx        # File attachments
+│   │   ├── Poll.tsx        # Poll component
+│   │   └── RichPreview.tsx # Rich content preview
+│   └── ui/                 # Reusable UI components
+└── utils/                  # Utility functions
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Built With
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **[Next.js 15](https://nextjs.org)** - React framework with Turbopack
+- **[React 19](https://react.dev)** - UI library
+- **[TypeScript](https://www.typescriptlang.org)** - Type safety
+- **[Tailwind CSS](https://tailwindcss.com)** - Utility-first styling
+- **[Discord API Types](https://discord-api-types.dev)** - TypeScript definitions for Discord
+- **[discord-markdown](https://github.com/orificedev/discord-markdown)** - Discord markdown parser
+
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest features
+- Submit pull requests
+
+---
+
+**Made with ❤️ for Discord developers**
